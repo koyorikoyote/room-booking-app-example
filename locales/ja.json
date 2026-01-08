@@ -1,0 +1,235 @@
+{
+  "app": {
+    "title": "会議室予約システム"
+  },
+  "auth": {
+    "login": "ログイン",
+    "logout": "ログアウト",
+    "username": "ユーザー名",
+    "password": "パスワード",
+    "loginButton": "ログイン",
+    "loginError": "ログインに失敗しました",
+    "invalidCredentials": "ユーザー名またはパスワードが正しくありません"
+  },
+  "navigation": {
+    "back": "戻る",
+    "home": "ホーム",
+    "floorPlan": "フロアマップ"
+  },
+  "language": {
+    "select": "言語選択",
+    "japanese": "日本語",
+    "english": "English"
+  },
+  "settings": {
+    "menu": "設定",
+    "language": "言語",
+    "logout": "ログアウト",
+    "tabletMode": "タブレットモード"
+  },
+  "tablet": {
+    "selectRoom": "会議室を選択"
+  },
+  "rooms": {
+    "conferenceRoomA": "会議室A",
+    "conferenceRoomB": "会議室B",
+    "conferenceRoomC": "会議室C",
+    "conferenceRoomD": "会議室D",
+    "selectRoom": "会議室を選択してください",
+    "inUse": "使用中",
+    "available": "空室",
+    "entrance": "入口"
+  },
+  "booking": {
+    "title": "新規予約",
+    "editTitle": "予約編集",
+    "department": "部署",
+    "selectDepartment": "部署を選択",
+    "loading": "読み込み中...",
+    "date": "日付",
+    "time": "時間",
+    "startTime": "開始時間",
+    "endTime": "終了時間",
+    "repetition": "繰り返し",
+    "remarks": "備考",
+    "submit": "予約する",
+    "update": "更新",
+    "delete": "削除",
+    "cancel": "キャンセル",
+    "submitting": "送信中...",
+    "deleting": "削除中...",
+    "success": "予約が完了しました",
+    "updateSuccess": "予約を更新しました",
+    "deleteSuccess": "予約を削除しました",
+    "error": "予約に失敗しました",
+    "deleteError": "予約の削除に失敗しました",
+    "unauthorized": "自分の予約のみ編集できます",
+    "confirmDelete": "この予約を削除してもよろしいですか？",
+    "conflict": "予約が重複しています",
+    "conflictDetails": "会議室: {room}\n日付: {date}\n時間: {startTime} - {endTime}\n部署: {department}\n\n別の時間帯を選択してください。"
+  },
+  "calendar": {
+    "title": "カレンダー",
+    "selectDate": "日付を選択してください",
+    "noBookings": "予約はありません",
+    "previousMonth": "前月",
+    "nextMonth": "翌月",
+    "loading": "読み込み中...",
+    "daySchedule": "日別スケジュール",
+    "selectDayToView": "日付をクリックしてスケジュールを表示",
+    "noBookingsForDay": "この日の予約はありません",
+    "empty": "空",
+    "moreBookings": "＋他{{count}}件"
+  },
+  "months": {
+    "january": "1月",
+    "february": "2月",
+    "march": "3月",
+    "april": "4月",
+    "may": "5月",
+    "june": "6月",
+    "july": "7月",
+    "august": "8月",
+    "september": "9月",
+    "october": "10月",
+    "november": "11月",
+    "december": "12月"
+  },
+  "weekdays": {
+    "monday": "月曜日",
+    "tuesday": "火曜日",
+    "wednesday": "水曜日",
+    "thursday": "木曜日",
+    "friday": "金曜日"
+  },
+  "errors": {
+    "required": "この項目は必須です",
+    "invalidTime": "終了時間は開始時間より後である必要があります",
+    "outsideWorkingHours": "予約は営業時間内（8:00-18:00）で行ってください",
+    "networkError": "ネットワークエラーが発生しました",
+    "serverError": "サーバーエラーが発生しました"
+  },
+  "userManagement": {
+    "title": "ユーザー管理",
+    "searchPlaceholder": "名前、ユーザー名、メール、または役割で検索...",
+    "newUser": "新規ユーザー",
+    "editUser": "ユーザー編集",
+    "deleteUser": "ユーザー削除",
+    "bulkDelete": "選択を削除",
+    "username": "ユーザー名",
+    "email": "メールアドレス",
+    "name": "名前",
+    "role": "役割",
+    "status": "ステータス",
+    "active": "有効",
+    "inactive": "無効",
+    "password": "パスワード",
+    "confirmPassword": "パスワード確認",
+    "leaveBlank": "(変更しない場合は空白のままにしてください)",
+    "languagePreference": "言語設定",
+    "createdAt": "作成日時",
+    "roles": {
+      "User": "ユーザー",
+      "Manager": "マネージャー",
+      "Administrator": "管理者"
+    },
+    "messages": {
+      "loadingError": "ユーザーの読み込みに失敗しました",
+      "createSuccess": "ユーザーを作成しました",
+      "updateSuccess": "ユーザーを更新しました",
+      "deleteSuccess": "ユーザーを削除しました",
+      "bulkDeleteSuccess": "ユーザーを削除しました"
+    },
+    "confirmations": {
+      "deleteUser": "このユーザーを削除してもよろしいですか？",
+      "deleteUserWithName": "{name}を削除してもよろしいですか？",
+      "bulkDeleteUsers": "{count}人のユーザーを削除してもよろしいですか？",
+      "cannotDeleteSelfTitle": "自分のアカウントは削除できません",
+      "cannotDeleteSelfMessage": "自分のアカウントを削除することはできません。"
+    },
+    "emptyStates": {
+      "noUsers": "ユーザーが見つかりません",
+      "noSearchResults": "検索条件に一致するユーザーがありません",
+      "startByAdding": "新しいユーザーを追加して開始してください"
+    }
+  },
+  "departmentManagement": {
+    "title": "部署管理",
+    "searchPlaceholder": "部署名で検索...",
+    "newDepartment": "新規部署",
+    "editDepartment": "部署編集",
+    "deleteDepartment": "部署削除",
+    "name": "部署名",
+    "confirmations": {
+      "deleteDepartment": "この部署を削除してもよろしいですか？",
+      "bulkDeleteDepartments": "{count}件の部署を削除してもよろしいですか？"
+    },
+    "emptyStates": {
+      "noDepartments": "部署が見つかりません",
+      "noSearchResults": "検索条件に一致する部署がありません"
+    }
+  },
+  "roomManagement": {
+    "title": "会議室管理",
+    "searchPlaceholder": "会議室コードまたは名前で検索...",
+    "newRoom": "新規会議室",
+    "editRoom": "会議室編集",
+    "deleteRoom": "会議室削除",
+    "code": "会議室コード",
+    "capacity": "収容人数",
+    "confirmations": {
+      "deleteRoom": "この会議室を削除してもよろしいですか？",
+      "bulkDeleteRooms": "{count}件の会議室を削除してもよろしいですか？"
+    },
+    "emptyStates": {
+      "noRooms": "会議室が見つかりません",
+      "noSearchResults": "検索条件に一致する会議室がありません"
+    }
+  },
+  "bookingManagement": {
+    "title": "予約管理",
+    "searchPlaceholder": "会議室、部署、またはユーザーで検索...",
+    "viewBooking": "予約を表示",
+    "deleteBooking": "予約削除",
+    "room": "会議室",
+    "user": "ユーザー",
+    "dateRange": "日付範囲",
+    "allRooms": "すべての会議室",
+    "allDepartments": "すべての部署",
+    "filterByRoom": "会議室で絞り込み",
+    "filterByDepartment": "部署で絞り込み",
+    "confirmations": {
+      "deleteBooking": "この予約を削除してもよろしいですか？",
+      "bulkDeleteBookings": "{count}件の予約を削除してもよろしいですか？"
+    },
+    "emptyStates": {
+      "noBookings": "予約が見つかりません",
+      "noSearchResults": "検索条件に一致する予約がありません"
+    }
+  },
+  "common": {
+    "actions": {
+      "save": "保存",
+      "cancel": "キャンセル",
+      "delete": "削除",
+      "edit": "編集",
+      "create": "作成",
+      "update": "更新",
+      "search": "検索",
+      "filter": "フィルター",
+      "clear": "クリア",
+      "bulkDelete": "選択を削除",
+      "retry": "再試行"
+    },
+    "feedback": {
+      "itemCreated": "アイテムを作成しました",
+      "itemUpdated": "アイテムを更新しました",
+      "itemDeleted": "アイテムを削除しました",
+      "itemsDeleted": "アイテムを削除しました",
+      "operationFailed": "操作に失敗しました"
+    },
+    "pagination": {
+      "showing": "{total}件中{current}件を表示"
+    }
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "app": {
+    "title": "Room Booking System"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "username": "Username",
+    "password": "Password",
+    "loginButton": "Login",
+    "loginError": "Login failed",
+    "invalidCredentials": "Invalid username or password"
+  },
+  "navigation": {
+    "back": "Back",
+    "home": "Home",
+    "floorPlan": "Floor Plan"
+  },
+  "language": {
+    "select": "Select Language",
+    "japanese": "日本語",
+    "english": "English"
+  },
+  "settings": {
+    "menu": "Settings",
+    "language": "Language",
+    "logout": "Logout",
+    "tabletMode": "Tablet Mode"
+  },
+  "tablet": {
+    "selectRoom": "Select Room"
+  },
+  "rooms": {
+    "conferenceRoomA": "Conference Room A",
+    "conferenceRoomB": "Conference Room B",
+    "conferenceRoomC": "Conference Room C",
+    "conferenceRoomD": "Conference Room D",
+    "selectRoom": "Please select a room",
+    "inUse": "In Use",
+    "available": "Available",
+    "entrance": "Entrance"
+  },
+  "booking": {
+    "title": "New Booking",
+    "editTitle": "Edit Booking",
+    "department": "Department",
+    "selectDepartment": "Select department",
+    "loading": "Loading...",
+    "date": "Date",
+    "time": "Time",
+    "startTime": "Start Time",
+    "endTime": "End Time",
+    "repetition": "Repetition",
+    "remarks": "Remarks",
+    "submit": "Book",
+    "update": "Update",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "submitting": "Submitting...",
+    "deleting": "Deleting...",
+    "success": "Booking completed successfully",
+    "updateSuccess": "Booking updated successfully",
+    "deleteSuccess": "Booking deleted successfully",
+    "error": "Booking failed",
+    "deleteError": "Failed to delete booking",
+    "unauthorized": "You can only edit your own bookings",
+    "confirmDelete": "Are you sure you want to delete this booking?",
+    "conflict": "Booking Conflict Detected",
+    "conflictDetails": "Room: {room}\nDate: {date}\nTime: {startTime} - {endTime}\nDepartment: {department}\n\nPlease select a different time slot."
+  },
+  "calendar": {
+    "title": "Calendar",
+    "selectDate": "Please select a date",
+    "noBookings": "No bookings",
+    "previousMonth": "Previous Month",
+    "nextMonth": "Next Month",
+    "loading": "Loading...",
+    "daySchedule": "Day Schedule",
+    "selectDayToView": "Click a day to view schedule",
+    "noBookingsForDay": "No bookings for this day",
+    "empty": "Empty",
+    "moreBookings": "+{{count}} more"
+  },
+  "months": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December"
+  },
+  "weekdays": {
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday"
+  },
+  "errors": {
+    "required": "This field is required",
+    "invalidTime": "End time must be after start time",
+    "outsideWorkingHours": "Bookings must be within working hours (8:00-18:00)",
+    "networkError": "Network error occurred",
+    "serverError": "Server error occurred"
+  },
+  "userManagement": {
+    "title": "User Management",
+    "searchPlaceholder": "Search by name, username, email, or role...",
+    "newUser": "New User",
+    "editUser": "Edit User",
+    "deleteUser": "Delete User",
+    "bulkDelete": "Delete Selected",
+    "username": "Username",
+    "email": "Email",
+    "name": "Name",
+    "role": "Role",
+    "status": "Status",
+    "active": "Active",
+    "inactive": "Inactive",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "leaveBlank": "(Leave blank to keep unchanged)",
+    "languagePreference": "Language Preference",
+    "createdAt": "Created At",
+    "roles": {
+      "User": "User",
+      "Manager": "Manager",
+      "Administrator": "Administrator"
+    },
+    "messages": {
+      "loadingError": "Failed to load users",
+      "createSuccess": "User created successfully",
+      "updateSuccess": "User updated successfully",
+      "deleteSuccess": "User deleted successfully",
+      "bulkDeleteSuccess": "Users deleted successfully"
+    },
+    "confirmations": {
+      "deleteUser": "Are you sure you want to delete this user?",
+      "deleteUserWithName": "Are you sure you want to delete {name}?",
+      "bulkDeleteUsers": "Are you sure you want to delete {count} users?",
+      "cannotDeleteSelfTitle": "Cannot Delete Own Account",
+      "cannotDeleteSelfMessage": "You cannot delete your own account."
+    },
+    "emptyStates": {
+      "noUsers": "No users found",
+      "noSearchResults": "No users match your search",
+      "startByAdding": "Get started by adding a new user"
+    }
+  },
+  "departmentManagement": {
+    "title": "Manage Departments",
+    "searchPlaceholder": "Search by department name...",
+    "newDepartment": "New Department",
+    "editDepartment": "Edit Department",
+    "deleteDepartment": "Delete Department",
+    "name": "Department Name",
+    "confirmations": {
+      "deleteDepartment": "Are you sure you want to delete this department?",
+      "bulkDeleteDepartments": "Are you sure you want to delete {count} departments?"
+    },
+    "emptyStates": {
+      "noDepartments": "No departments found",
+      "noSearchResults": "No departments match your search"
+    }
+  },
+  "roomManagement": {
+    "title": "Manage Rooms",
+    "searchPlaceholder": "Search by room code or name...",
+    "newRoom": "New Room",
+    "editRoom": "Edit Room",
+    "deleteRoom": "Delete Room",
+    "code": "Room Code",
+    "capacity": "Capacity",
+    "confirmations": {
+      "deleteRoom": "Are you sure you want to delete this room?",
+      "bulkDeleteRooms": "Are you sure you want to delete {count} rooms?"
+    },
+    "emptyStates": {
+      "noRooms": "No rooms found",
+      "noSearchResults": "No rooms match your search"
+    }
+  },
+  "bookingManagement": {
+    "title": "Manage Bookings",
+    "searchPlaceholder": "Search by room, department, or user...",
+    "viewBooking": "View Booking",
+    "deleteBooking": "Delete Booking",
+    "room": "Room",
+    "user": "User",
+    "dateRange": "Date Range",
+    "allRooms": "All Rooms",
+    "allDepartments": "All Departments",
+    "filterByRoom": "Filter by Room",
+    "filterByDepartment": "Filter by Department",
+    "confirmations": {
+      "deleteBooking": "Are you sure you want to delete this booking?",
+      "bulkDeleteBookings": "Are you sure you want to delete {count} bookings?"
+    },
+    "emptyStates": {
+      "noBookings": "No bookings found",
+      "noSearchResults": "No bookings match your search"
+    }
+  },
+  "common": {
+    "actions": {
+      "save": "Save",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "edit": "Edit",
+      "create": "Create",
+      "update": "Update",
+      "search": "Search",
+      "filter": "Filter",
+      "clear": "Clear",
+      "bulkDelete": "Delete Selected",
+      "retry": "Retry"
+    },
+    "feedback": {
+      "itemCreated": "Item created successfully",
+      "itemUpdated": "Item updated successfully",
+      "itemDeleted": "Item deleted successfully",
+      "itemsDeleted": "Items deleted successfully",
+      "operationFailed": "Operation failed"
+    },
+    "pagination": {
+      "showing": "Showing {current} of {total}"
+    }
+  }
+}
