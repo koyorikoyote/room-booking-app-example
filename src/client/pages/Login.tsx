@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -19,6 +19,13 @@ export const Login: React.FC = () => {
     const { t } = useTranslation();
     const { language, setLanguage } = useLanguage();
     const { login, isAuthenticated, isLoading: authLoading } = useAuth();
+
+    // Remove /login from URL
+    useEffect(() => {
+        if (window.location.pathname === '/login') {
+            window.history.replaceState({}, document.title, '/');
+        }
+    }, []);
 
     const [formData, setFormData] = useState<LoginFormData>({
         username: '',

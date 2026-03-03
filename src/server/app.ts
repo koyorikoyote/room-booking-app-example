@@ -1,5 +1,6 @@
 import express, { Request, Response, NextFunction } from "express";
 import path from "path";
+import fs from "fs";
 import { renderToPipeableStream } from "react-dom/server";
 import React from "react";
 import { MemoryRouter } from "react-router-dom";
@@ -40,9 +41,19 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 });
 
 // Serve static files in production
+let manifest: Record<string, string> = {};
 if (process.env.NODE_ENV === "production") {
   const clientDistPath = path.resolve(__dirname, "../client");
   app.use(express.static(clientDistPath));
+
+  try {
+    const manifestPath = path.join(clientDistPath, "manifest.json");
+    if (fs.existsSync(manifestPath)) {
+      manifest = JSON.parse(fs.readFileSync(manifestPath, "utf-8"));
+    }
+  } catch (err) {
+    console.error("Could not load manifest.json", err);
+  }
 }
 
 // API routes
@@ -82,6 +93,9 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
     const App = (await import("../client/App")).default;
 
     const Html = ({ children }: { children?: React.ReactNode }) => {
+      const mainJs = manifest["main.js"] || "/main.js";
+      const stylesCss = manifest["main.css"] || "/styles.css";
+
       return React.createElement(
         "html",
         { lang: "en" },
@@ -95,7 +109,7 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
           }),
           React.createElement("link", {
             rel: "stylesheet",
-            href: "/styles.css",
+            href: stylesCss,
           }),
           React.createElement("title", null, "Room Booking System")
         ),
@@ -103,7 +117,7 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
           "body",
           null,
           React.createElement("div", { id: "root" }, children),
-          React.createElement("script", { src: "/main.js", defer: true })
+          React.createElement("script", { src: mainJs, defer: true })
         )
       );
     };

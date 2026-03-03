@@ -1,6 +1,7 @@
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 
 module.exports = merge(common, {
     mode: 'production',
@@ -22,7 +23,11 @@ module.exports = merge(common, {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'styles.css',
+            filename: 'styles.[contenthash].css',
+        }),
+        new WebpackManifestPlugin({
+            fileName: 'manifest.json',
+            publicPath: '/',
         }),
     ],
     optimization: {

@@ -3,7 +3,7 @@ import prisma from "../shared/lib/prisma";
 
 function getApp(): Application {
   try {
-    // eslint-disable-next-line @typescript-eslint/no-var-requires, @typescript-eslint/no-require-imports
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const mod = require("./app");
     return mod.default || mod;
   } catch (err) {
@@ -33,7 +33,7 @@ function getApp(): Application {
 }
 
 try {
-  // eslint-disable-next-line @typescript-eslint/no-var-requires, @typescript-eslint/no-require-imports
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   require("dotenv").config();
 } catch {
   // optional: dotenv not installed or no .env file
@@ -45,13 +45,13 @@ const PORT =
 
 function startServer() {
   const appInstance = getApp();
-  const server = (appInstance as any).listen(PORT, "127.0.0.1", () => {
-    console.log(`🚀 Server is running on http://127.0.0.1:${PORT}`);
+  const server = (appInstance as any).listen(PORT, "0.0.0.0", () => {
+    console.log(`🚀 Server is running on http://0.0.0.0:${PORT}`);
     console.log(`📊 Environment: ${process.env.NODE_ENV || "development"}`);
     console.log("🔗 Database: MySQL via Prisma ORM");
 
     if (process.env.NODE_ENV === "development") {
-      console.log(`🌐 Server: http://127.0.0.1:${PORT}`);
+      console.log(`🌐 Server: http://0.0.0.0:${PORT}`);
       console.log(`🔍 Health: http://127.0.0.1:${PORT}/api/health`);
     }
   });
